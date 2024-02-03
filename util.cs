@@ -1,0 +1,1 @@
+// var f = () => { return Console.ReadLine().Split().Select(int.Parse).ToArray(); };
