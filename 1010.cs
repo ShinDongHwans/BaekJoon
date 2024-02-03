@@ -1,4 +1,4 @@
-namespace Test
+namespace Baekjoon
 {
     class Test
     {

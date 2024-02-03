@@ -1,4 +1,5 @@
-namespace Test
+// https://www.acmicpc.net/short/status/25304/86/1
+namespace Baekjoon
 {
     class Receipt
     {

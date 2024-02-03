@@ -1,13 +1,10 @@
-﻿var f = () => { return Console.ReadLine().Split().Select(int.Parse).ToArray(); };
-var i = f();
-var l = i[0];
-var x = new int[l + 1];
-for (; l > 0;) x[l] = l--;
-for (; i[1]-- > 0;)
+﻿double s = 0, t = 0, i = 0, m;
+for (; i++ < 20;)
 {
-    var n = f();
-    for (; n[0] < n[1];)
-        (x[n[0]], x[n[1]]) = (x[n[1]--], x[n[0]++]);
+    var v = Console.ReadLine().Split();
+    if (v[2][0] == 'P') continue;
+    m = double.Parse(v[1]);
+    t += m;
+    s += m * (v[2][0] == 'F' ? 0 : 69 - v[2][0] + 4.8 - v[2][1] / 10f);
 }
-for (l = 1; l < x.Length;)
-    Console.Write(x[l++] + " ");
+Console.Write(s / t);
